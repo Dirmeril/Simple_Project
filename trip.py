@@ -16,8 +16,8 @@ def index():
     trip.load_trips()
 
     if request.method == 'GET':
-        
-        return render_template('index.html', trip=trip.list_of_trips)
+        active_menu = 'Home'
+        return render_template('index.html', trip=trip.list_of_trips, active_menu=active_menu)
     
     else:
         
@@ -31,8 +31,8 @@ def index():
 def proposal():
 
     if request.method == 'GET':
-        
-        return render_template('proposal.html')
+        active_menu = 'Add idea'
+        return render_template('proposal.html', active_menu=active_menu)
 
     else:
 
