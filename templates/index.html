@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+    
+{% block fast %}
+
+<div class="row g-0 fw-semibold text-center"> 
+ 
+    {% for f in get_flashed_messages() %}
+        <div style="border-style: solid; background-color: yellowgreen;">{{f}}</div>
+    {% endfor %}
+    
+</div>
+
+{% endblock %}
+
+
+{% block main %}
+
+<div class="container">
+    <div class="row mb-2">
+        <div class="col-sm-8 h1" >
+            <br>Check existing ideas of trips
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-sm-8 ">
+            <h5>Please select a name:</h5>
+        </div>
+    </div>
+    <form id="%%%" method="POST" action="{{url_for('index')}}">
+    <div class="row mb-3">
+        <div class="col-sm-8 ">
+        <label for="trip_text" class="form-label">Trip name</label>
+        <select class="form-select" aria-label="Default select example" name="choosen_trip">
+            <option selected>Choose a proposal trip</option>
+            {% for i in trip %}
+                <option value="{{i['id']}}">{{ i['trip_text'] }}</option>
+            {% endfor %}
+        </select>
+        </div>
+    </div>
+    <div class="col-sm-3" >
+        <button type="submit" class="btn btn-primary">Check proposal</button>
+    </div>
+    </form>
+</div>
+
+
+{% endblock %}

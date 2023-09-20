@@ -1,0 +1,20 @@
+trip_text,email,short_text,completness,contact
+Zakopane,Bob@gmail.com,Pojedziemy w góry. Bo są wysokie.,no,True,1
+Niemcy,Adam@gmail.com,Pojedziemy zobaczyć berlin. HAHA,yes,True,2
+CZAD,czad@gmail.com,"Czad, czad, czas, cos",no,True,3
+Zakopane,CHUJ@gmail.com,beka beka beka,yes,False,4
+Warszawa,mu@mu.pl,pałace i kawki i teatry,yes,True,5
+Brazylia,br@cos.pl,Do faweli napierdalac,no,True,6
+d,d@d.pl,dddddddd,yes,False,7
+d,d@d.pl,dadadada,no,True,8
+a,AAAA@daas.cpm,a,yes,False,9
+dadadaadda,CZAD@sda.pl,czczxcq`,yes,True,10
+cxzzzxzz,Bob@gmail.com,zzzzz,no,True,11
+  dadadd222,B@b.com,ddads,no,False,12
+CZAD,B@b.com,adadadadzczxczxz1213,no,True,13
+CZAD,B@b.com,a,yes,True,14
+EKSTRA WYCIECZKA,d@d.pl,ddddadada,no,True,15
+sasasad,sasadas2@asda.pl,dsaasd,no,True,16
+k,B@b.com,ddd,yes,False,17
+CZAD,B@b.com,ff,yes,True,18
+a,B@b.com,a,yes,False,19
