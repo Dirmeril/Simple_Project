@@ -49,11 +49,11 @@ def proposal():
         if 'email' in request.form:
             email = request.form['email']
 
-        short_text = ''
+        short_text = 'brak'
         if 'short_text' in request.form:
             short_text = request.form['short_text']
 
-        completness = ''
+        completness = 'brak'
         if 'completness' in request.form:
             completness = request.form['completness']
        
@@ -62,7 +62,9 @@ def proposal():
         # Sprawdza czy nazwa wycieczki jest wpisana
         if trip_text.strip() == '':
                 again = [email, short_text, completness, contact]
-                print(again)
+
+                if short_text.strip() == '':
+                    short_text = 'brak'
                 return redirect(url_for('proposalAgain', email=email, short_text=short_text, completness=completness, contact=contact)), flash(f"Trip proposal hasn't had name. Fill again form!")
 
         data = {'trip_text': trip_text, 'email': email, 'short_text': short_text, 'completness': completness, 'contact': contact, 'id': id}
